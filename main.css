@@ -18,6 +18,7 @@ img {
 * General
 *********************************/
 
+
 body {
     background-color: snow;
     color: slategrey;
@@ -35,5 +36,50 @@ h2 {
 }
 
 h1 {
+    margin-top: 0;
     font-family: 'Fredoka One', cursive;
 }
+
+/*********************************
+* Header
+*********************************/
+header {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+header div {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+header div h1 {
+    text-align: left;
+}
+
+header div:last-child {
+    display: flex-end;
+    align-items: center;
+}
+/*********************************
+* Container
+*********************************/
+
+
+
+/*********************************
+* Aside/Nav
+*********************************/
+
+/*********************************
+* Main
+*********************************/
+
+/*********************************
+* Footer
+*********************************/              
