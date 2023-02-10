@@ -1,0 +1,83 @@
+
+@import "config";
+
+
+* {
+    border: $border-style;
+}
+
+img {
+	width: 100px;
+}
+header {
+	width: 90%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+	div {
+		display: flex;
+		flex-wrap: wrap;
+		width: 50%;
+		margin-bottom: 20px;
+		&:last-child {
+			display: flex;
+			align-items: center;
+		}
+	}
+	h1 {
+		text-align: left;
+	}
+}
+.container {
+	display: flex;
+	width: 90%;
+	margin: auto;
+	justify-content: space-between;
+}
+aside {
+	flex-basis: 15%;
+	min-width: 15%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+ul {
+	padding: 0;
+}
+li {
+	list-style: none;
+	text-align: left;
+}
+main {
+	width: 85%;
+	flex-basis: 85%;
+}
+body {
+	background-color: $background-color;
+	color: $font-color;
+	margin: 20px 0;
+	font-family: $font-family_1;
+	text-align: center;
+}
+h1 {
+	margin: 0;
+	font-family: $font-family_2;
+}
+h2 {
+	margin: 0;
+	font-size: 1em;
+}
+h3 {
+	margin: 0;
+}
+h4 {
+	margin: 0;
+}
+h5 {
+	margin: 0;
+}
+h6 {
+	margin: 0;
+}
+
