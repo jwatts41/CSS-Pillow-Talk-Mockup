@@ -1,5 +1,6 @@
 * {
-  border: 1px solid red;
+  border: 1px solid rgb(245, 240, 240);
+  border-radius: 10px;
 }
 
 img {
@@ -57,8 +58,8 @@ main {
 }
 
 body {
-  background-color: snow;
-  color: slategrey;
+  background-color: slategray;
+  color: rgb(247, 249, 251);
   margin: 20px 0;
   font-family: "Baloo 2", cursive;
   text-align: center;

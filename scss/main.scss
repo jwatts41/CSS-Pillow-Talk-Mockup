@@ -1,28 +1,30 @@
 
 @import "config";
+@import "mixin";
 
 
 * {
     border: $border-style;
+	border-radius: $border-radius;
 }
 
 img {
 	width: 100px;
 }
-header {
+@mixin header {
 	width: 90%;
 	margin: auto;
-	display: flex;
+	display: $display;
 	justify-content: space-between;
-	margin-bottom: 20px;
+	margin-bottom: $margin-2;
 	div {
-		display: flex;
+		display: $display;
 		flex-wrap: wrap;
 		width: 50%;
-		margin-bottom: 20px;
+		margin-bottom: $margin-2;
 		&:last-child {
-			display: flex;
-			align-items: center;
+			display: $display;
+			align-items: $align-items;
 		}
 	}
 	h1 {
@@ -30,7 +32,7 @@ header {
 	}
 }
 .container {
-	display: flex;
+	display: $display;
 	width: 90%;
 	margin: auto;
 	justify-content: space-between;
@@ -38,9 +40,9 @@ header {
 aside {
 	flex-basis: 15%;
 	min-width: 15%;
-	display: flex;
+	display: $display;
 	justify-content: flex-start;
-	align-items: center;
+	align-items: $align-items;
 }
 ul {
 	padding: 0;
@@ -48,6 +50,13 @@ ul {
 li {
 	list-style: none;
 	text-align: left;
+	@include nav;
+	@include img;
+}
+
+nav {
+	margin: 10px;
+	border-radius: 10px;
 }
 main {
 	width: 85%;
@@ -56,28 +65,29 @@ main {
 body {
 	background-color: $background-color;
 	color: $font-color;
-	margin: 20px 0;
+	margin: $margin-2;
 	font-family: $font-family_1;
 	text-align: center;
 }
 h1 {
-	margin: 0;
+	margin: $margin-h;
 	font-family: $font-family_2;
+	@include header;
 }
 h2 {
-	margin: 0;
+	margin: $margin-h;
 	font-size: 1em;
 }
 h3 {
-	margin: 0;
+	margin: $margin-h;
 }
 h4 {
-	margin: 0;
+	margin: $margin-h;
 }
 h5 {
-	margin: 0;
+	margin: $margin-h;
 }
 h6 {
-	margin: 0;
+	margin: $margin-h;
 }
 
